@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "sans-serif";
+}
+
+/* this  nav-bar contains upper two headers as .nav-bar1 & .nav-bar2 */
+.nav-bar{
+    background-color: #0f1111;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* first .nav-bar1 header */
+.nav-bar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+/* container inside .nav-bar1 */
+.nav-bar1_container{
+    /* border: 1px solid red; */
+    height: 60px;
+    width: 80%;
+    background-color: #0f1111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 0.75rem;
+}
+
+.nav-bar1_container img{
+    width: 150px;
+    height: 80px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.location:hover{
+    color: #dddddd;
+}
+
+.icon-india{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Middle section i.e. search bar */
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.search form{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+/* to select categories of your search */
+.search select{
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search input{
+    width: 600px;
+    height: 100%;
+    border: none;
+    /* border: 1px solid #ccc; */
+}
+
+.search button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #ffCC11;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.signin-account:hover{
+    color: #dddddd;
+    cursor: pointer;
+}
+
+.return-orders:hover{
+    color: #dddddd;
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    align-items: flex-end;
+    i{
+        font-size: 40px;
+    }
+}
+
+.cart:hover{
+    color: #dddddd;
+    cursor: pointer;
+}
+
+/* second .nav-bar2  starts here just below amazon logo */
+.nav-bar2{
+    background: #222f3d;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+/* container of .nav-bar2  */
+.nav-bar2_container{
+    /* border: 2px solid yellow; */
+    width: 80%;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 0.90rem;
+}
+
+.nav-bar2 ul{
+    /* border: 1px solid blue; */
+    width: 40%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar2 li:hover{
+    color: #dddddd;
+    cursor: pointer;
+}
+
+/* .nav-bar2 p{
+    cursor: pointer;
+} */
+
+.nav-bar2 p:hover{
+    cursor: pointer;
+    color: #dddddd;
+}
+
+
+
+
+/* prime day banner section  */
+.prime-day_banner{
+    width: 100%;
+}
+
+.prime-day_banner img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+
+/* highlighted 4 cards  */
+.highlighted_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 50px 0;
+    margin-top: -5px;
+}
+
+/* Container for the individual cards */
+.highlighted_items-container{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    /* Allow wrapping for responsiveness */
+    align-items: stretch;
+    gap: 20px; 
+    padding: 0 20px;
+    max-width: 1280px;
+    
+}
+
+/* Individual card styling */
+.item{
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(25% - 20px); /* Adjust the size to fit four items with gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;  /*it'll take 0.5 sec for item to be zoom */
+}
+
+/* hovering on item makes it larger */
+.item:hover {
+    transform: scale(1.12); /* Slightly larger scaling effect */
+}
+
+.item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.item a {
+    font-size: 0.9rem;
+    color: #0073e6; /* Amazon-like blue color */
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    margin-right: 160px;
+}
+
+.item:hover a {
+    color: #c7511f;
+    border-color: #c7511f;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .item {
+        flex-basis: calc(50% - 20px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-basis: calc(100% - 20px); /* One item per row on small screens */
+    }
+}
+
+/* footer section of web-page */
+
+.footer{
+    background-color: #222f3d;
+    height: 300px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.footer-1{
+    background-color: #37475a;
+    /* color: white; */
+    text-align: center;
+    height: 50px;
+    border: none;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.footer-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-1 a:hover{
+    background-color: #dddddd;
+}
+
+.footer-2{
+    /* border: 2px solid red; */
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.foo-card{
+    /* border: 1px solid yellow; */
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px 0;
+}
+
+.foo-card ul{
+    list-style: none;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    
+}
+
+.foo-card li{
+    margin-top: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.foo-card li:hover{
+    text-decoration: underline;
+    color: #dddddd;
+}
