@@ -1,6 +1,6 @@
 # Amazon Clone
 
-![Project Screenshot](https://adarsh-amazon-clone.netlify.app/asset/prime-day_background.png)
+![Project Screenshot](https://github.com/adarsh4997/CSS-Amazon_Clone/blob/main/Project%20Screenshots/image.png)
 
 ## Table of Contents
 
