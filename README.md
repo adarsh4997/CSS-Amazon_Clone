@@ -65,8 +65,9 @@ To get a local copy of the project up and running, follow these steps:
 
 ## File Structure
 
-The project structure is as follows:
+*The project structure is as follows:*
 
+```bash
 amazon-clone/
 │
 ├── asset/                    # Image assets
@@ -79,6 +80,7 @@ amazon-clone/
 ├── style.css                 # Main stylesheet
 ├── index.html                # Main HTML file
 └── README.md                 # Project README file
+```
 
 ## Contributing
 
